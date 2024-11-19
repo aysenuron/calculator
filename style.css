@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    width: 320px;
+    padding: 20px;
+    padding-top: 100px;
+    margin: auto 8px;
+    margin-top: 30px;
+    background-color: #f6f6f6;
+    box-shadow: 2px 2px #d8d8d8;
+    border-radius: 20px;
+}
+
+.display {
+    width: 100%;
+    height: 70px;
+    background-color: #f6f6f6;
+    margin-bottom: 64px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+button {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.digit-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.operator-buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 12px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 12px;
+}
+
+.digit, .clear, .decimal {
+    background-color: #cecece;
+    font-size: 20px;
+    font-weight: 700;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+.digit:active, .clear:active, .decimal:active {
+    background-color: #a9a9a9;
+}
+
+.operator {
+    background-color: rgb(255, 174, 0);
+    font-size: 20px;
+    font-weight: 700;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+.operator:focus {
+    background-color: rgb(213, 152, 19);
+}
+
+.displayed-digit {
+    font-size: 40px;
+    color: black;
+    text-align: right;
+    font-weight: 700;
+}
